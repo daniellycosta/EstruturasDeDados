@@ -5,26 +5,21 @@ class Mergesort {
 
     static void split(LinkedList<Integer> l, LinkedList<Integer> l1, LinkedList<Integer> l2) {
         int fim = l.size();
-//        int tamanho = fim - inicio + 1;
         int meio = l.size() / 2;
 
-//        if(l.size() > 1){
         for (int i = 0; i < meio; i++) {
             l1.add(l.get(i));
         }
         for (int i = meio; i < fim; i++) {
             l2.add(l.get(i));
         }
-//        }
+
 
     }
 
     static LinkedList<Integer> merge(LinkedList<Integer> l1,
             LinkedList<Integer> l2) {
         LinkedList<Integer> temp = new LinkedList<>();
-
-       // int tamanho = l1.size();
-//        int p1 = l1.getFirst();
 
         if (l1 == null) {
             return l2;
@@ -78,7 +73,7 @@ class Mergesort {
     }
 }
 
-// A classe Ex1 È fornecida fournie, para testar o cÛdigo de Mergesort
+// A classe Ex1 √© fornecida fournie, para testar o c√≥digo de Mergesort
 class Ex1 {
 
     static boolean is_sorted(LinkedList<Integer> l) {
@@ -92,7 +87,7 @@ class Ex1 {
         return true;
     }
 
-    static final int M = 10; // os elementos est„o entre 0..M-1
+    static final int M = 10; // os elementos est√£o entre 0..M-1
 
     static int[] occurrences(LinkedList<Integer> l) {
         int[] occ = new int[M];
